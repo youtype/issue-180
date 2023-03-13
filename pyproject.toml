@@ -1,0 +1,11 @@
+[tool.pyright]
+exclude = [
+    "**/__pycache__",
+]
+reportMissingImports = "error"
+reportMissingTypeStubs = "error"
+reportMissingTypeArgument = "error"
+reportIncompatibleMethodOverride = "error"
+reportIncompatibleVariableOverride = "error"
+reportUnknownParameterType = "error"
+pythonVersion = "3.7"
