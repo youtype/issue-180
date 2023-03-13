@@ -1,17 +1,9 @@
-from aioboto3 import Session
-from types_aiobotocore_s3.client import S3Client
-
-class MyClass:
-    def create_s3_client(self) -> S3Client:
-            return Session().client(
-                service_name='s3',
-                endpoint_url='some url',
-                aws_access_key_id='***',
-                aws_secret_access_key='***'
-            )
+from boto3.session import Session
+from mypy_boto3_s3.client import S3Client
 
 def main():
-    MyClass().create_s3_client()
+    session = Session()
+    s3_client: S3Client = session.client('s3')
     
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

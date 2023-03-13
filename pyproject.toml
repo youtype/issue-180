@@ -1,11 +1,36 @@
+[tool.black]
+line-length = 100
+include = '.*\.pyi?$'
+target-version = [
+    'py37',
+    'py38',
+    'py39',
+    'py310',
+    'py311',
+]
+preview = true
+
+[tool.isort]
+profile = "black"
+line_length = 100
+known_third_party = [
+    "botocore",
+    "boto3",
+    "aiobotocore",
+    "aioboto3",
+]
+src_paths = []
+
 [tool.pyright]
 exclude = [
     "**/__pycache__",
+    "**/.venv",
 ]
 reportMissingImports = "error"
 reportMissingTypeStubs = "error"
 reportMissingTypeArgument = "error"
 reportIncompatibleMethodOverride = "error"
 reportIncompatibleVariableOverride = "error"
+reportUnknownMemberType = "error"
 reportUnknownParameterType = "error"
 pythonVersion = "3.7"

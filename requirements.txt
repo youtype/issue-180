@@ -1,9 +1,2 @@
-aioboto3
-arq
-fastapi[all]
-pillow
-pillow-heif
-python-jose[cryptography]
-python-magic
-typer[all]
-types-aioboto3[s3]
+boto3
+boto3-stubs[essential]

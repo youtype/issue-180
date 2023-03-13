@@ -1,7 +1,18 @@
-# Issue 180
+# mypy-boto3-builder playground
 
-Playground for https://github.com/youtype/mypy_boto3_builder/issues/180
+Use this repository to create Pull Requests to demonstrate issues in
+[mypy-boto3-builder](https://github.com/youtype/mypy_boto3_builder).
 
-Run `./reproduce.sh` to create venv and run `pyright`. Unfortunately, I cannot reproduce the issue this way.
+## How to use
 
-Please create a PR for this repo once you are able to reproduce the issue.
+- Create a new branch with the issue number `<issue_number>-<issue-title>`
+- Adapt the code (`test.py`) to reproduce the issue
+- Change `reproduce.sh` to reproduce the issue
+- Feel free to commit any additional files
+- Post the branch name in the corresponding issue
+
+## Files
+
+- `test.py` - code to reproduce the issue
+- `reproduce.sh` bash script to reproduce the issue
+- `requirements.txt` - list your pip requirements
